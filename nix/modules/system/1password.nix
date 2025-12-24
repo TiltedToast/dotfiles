@@ -24,16 +24,14 @@
     });
   '';
 
-  environment.etc = {
-    "1password/custom_allowed_browsers" = {
-      text = ''
-        librewolf
-        librewolf-bin
-        .librewolf-wrapped
-        .librewolf-wrap
-      '';
-      mode = "0755";
-    };
+  environment.etc."1password/custom_allowed_browsers" = {
+    text = ''
+      librewolf
+      librewolf-bin
+      .librewolf-wrapped
+      .librewolf-wrap
+    '';
+    mode = "0755";
   };
 
   environment.sessionVariables = {
