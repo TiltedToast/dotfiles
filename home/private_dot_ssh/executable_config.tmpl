@@ -1,7 +1,15 @@
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github.pub
+    IdentitiesOnly yes
+
 Host hifumi
     HostName {{ .hifumi_ip }}
     User ubuntu
     Port 42069
+    IdentityFile ~/.ssh/hetzner.pub
+    IdentitiesOnly yes
 
 Host ttvproxy
     HostName {{ .ttv_proxy_ip }}
@@ -15,17 +23,13 @@ Host wsl
 Host hf.co
     HostName hf.co
     User git
-
-Host aur.archlinux.org
-    HostName aur.archlinux.org
-    User aur
-    IdentityFile ~/.ssh/git.pub
+    IdentityFile ~/.ssh/hf.pub
     IdentitiesOnly yes
 
 Host gitlab.rlp.net
     HostName gitlab.rlp.net
     User git
-    IdentityFile ~/.ssh/git.pub
+    IdentityFile ~/.ssh/gitlab-uni.pub
     IdentitiesOnly yes
 
 Host hpcgate sshgate mogon mogon-nhr monster? dungeonkeeper gracehopper
