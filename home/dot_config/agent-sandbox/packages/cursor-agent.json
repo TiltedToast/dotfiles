@@ -6,11 +6,11 @@
     },
     "http": {
       "allow": [
-        { "methods": ["POST"], "url": "https://api2.cursor.sh/aiserver.v1.AiService/GetDefaultModelForCli", "comment": "global_package" },
-        { "methods": ["POST"], "url": "https://api2.cursor.sh/aiserver.v1.DashboardService/GetUserPrivacyMode", "comment": "global_package" }
+        { "methods": ["POST"], "url": "https://api2.cursor.sh/aiserver.v1.AiService/GetDefaultModelForCli", "port": 443, "comment": "global_package" },
+        { "methods": ["POST"], "url": "https://api2.cursor.sh/aiserver.v1.DashboardService/GetUserPrivacyMode", "port": 443, "comment": "global_package" }
       ],
       "deny": [
-        { "methods": ["POST"], "url": "https://api2.cursor.sh/aiserver.v1.AnalyticsService/BootstrapStatsig", "comment": "global_package" }
+        { "methods": ["POST"], "url": "https://api2.cursor.sh/aiserver.v1.AnalyticsService/BootstrapStatsig", "port": 443, "comment": "global_package" }
       ]
     }
   },

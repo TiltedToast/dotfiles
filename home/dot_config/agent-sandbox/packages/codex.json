@@ -8,16 +8,16 @@
     },
     "http": {
       "allow": [
-        { "methods": ["POST"], "url": "https://ab.chatgpt.com/v1/initialize", "comment": "global_package" },
-        { "methods": ["POST"], "url": "https://ab.chatgpt.com/v1/rgstr", "comment": "global_package" },
-        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/codex/alpha/history/v2", "comment": "global_package" },
-        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/codex/alpha/notes/v2", "comment": "global_package" },
-        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/codex/alpha/notes/v2/thread_hint", "comment": "global_package" },
-        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/codex/alpha/notes/v2/write_file", "comment": "global_package" },
-        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/ps/apps/batch", "comment": "global_package" },
-        { "methods": ["GET"], "url": "https://chatgpt.com/backend-api/wham/settings/user", "comment": "global_package" },
-        { "methods": ["GET"], "url": "https://github.com/DietrichGebert/ponytail.git", "comment": "global_package" },
-        { "methods": ["POST"], "url": "https://github.com/DietrichGebert/ponytail.git/git-upload-pack", "comment": "global_package" }
+        { "methods": ["POST"], "url": "https://ab.chatgpt.com/v1/initialize", "port": 443, "comment": "global_package" },
+        { "methods": ["POST"], "url": "https://ab.chatgpt.com/v1/rgstr", "port": 443, "comment": "global_package" },
+        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/codex/alpha/history/v2", "port": 443, "comment": "global_package" },
+        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/codex/alpha/notes/v2", "port": 443, "comment": "global_package" },
+        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/codex/alpha/notes/v2/thread_hint", "port": 443, "comment": "global_package" },
+        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/codex/alpha/notes/v2/write_file", "port": 443, "comment": "global_package" },
+        { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/ps/apps/batch", "port": 443, "comment": "global_package" },
+        { "methods": ["GET"], "url": "https://chatgpt.com/backend-api/wham/settings/user", "port": 443, "comment": "global_package" },
+        { "methods": ["GET"], "url": "https://github.com/DietrichGebert/ponytail.git", "port": 443, "comment": "global_package" },
+        { "methods": ["POST"], "url": "https://github.com/DietrichGebert/ponytail.git/git-upload-pack", "port": 443, "comment": "global_package" }
       ],
       "deny": []
     }

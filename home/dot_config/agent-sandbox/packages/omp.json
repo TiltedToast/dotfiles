@@ -6,7 +6,7 @@
     },
     "http": {
       "allow": [
-        { "methods": ["GET"], "url": "https://catalog.stencil.so/models.json.zstd", "comment": "global_package" }
+        { "methods": ["GET"], "url": "https://catalog.stencil.so/models.json.zstd", "port": 443, "comment": "global_package" }
       ],
       "deny": []
     }
@@ -28,6 +28,24 @@
   "resources": {
     "allow": [
       { "kind": "unix_socket", "path": "~/.local/state/omp", "access": "connect", "comment": "global_package" }
+    ],
+    "deny": []
+  },
+  "dbus": {
+    "allow": [
+      {
+        "target": {
+          "bus": "system",
+          "destination": "org.freedesktop.login1",
+          "object_path": "/org/freedesktop/login1",
+          "interface": "org.freedesktop.login1.Manager",
+          "member": "Inhibit",
+          "message_kind": "method_call",
+          "signature": "(ssss)",
+          "fd_metadata": []
+        },
+        "comment": "global_package"
+      }
     ],
     "deny": []
   }
