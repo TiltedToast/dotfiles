@@ -276,10 +276,10 @@
   };
 
   xdg.desktopEntries."net.local.ghostty-maximized" = {
-    name = "Ghostty Maximized";
     # A separate instance keeps the maximize override out of normal launches.
     exec = "${lib.getExe pkgs.ghostty} --gtk-single-instance=false --maximize=true";
     icon = "com.mitchellh.ghostty";
+    name = "Ghostty Maximized";
     noDisplay = true;
     terminal = false;
   };
