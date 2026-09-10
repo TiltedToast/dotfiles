@@ -244,7 +244,8 @@
       session.sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
 
       shortcuts = {
-        "services/com.mitchellh.ghostty.desktop".new-window = "Meta+Return";
+        "services/com.mitchellh.ghostty.desktop".new-window = [ ];
+        "services/net.local.ghostty-maximized.desktop"._launch = "Meta+Return";
         "services/net.local.hdr-toggle.desktop"._launch = lib.mkIf osConfig.hdr.enable "Meta+Alt+B";
         "services/systemsettings.desktop"._launch = "Meta+I";
       };
@@ -272,5 +273,14 @@
   services.wl-clip-persist = {
     clipboardType = "regular";
     enable = true;
+  };
+
+  xdg.desktopEntries."net.local.ghostty-maximized" = {
+    name = "Ghostty Maximized";
+    # A separate instance keeps the maximize override out of normal launches.
+    exec = "${lib.getExe pkgs.ghostty} --gtk-single-instance=false --maximize=true";
+    icon = "com.mitchellh.ghostty";
+    noDisplay = true;
+    terminal = false;
   };
 }
