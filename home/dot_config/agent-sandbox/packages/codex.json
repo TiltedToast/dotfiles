@@ -17,7 +17,8 @@
         { "methods": ["POST"], "url": "https://chatgpt.com/backend-api/ps/apps/batch", "port": 443, "comment": "global_package" },
         { "methods": ["GET"], "url": "https://chatgpt.com/backend-api/wham/settings/user", "port": 443, "comment": "global_package" },
         { "methods": ["GET"], "url": "https://github.com/DietrichGebert/ponytail.git", "port": 443, "comment": "global_package" },
-        { "methods": ["POST"], "url": "https://github.com/DietrichGebert/ponytail.git/git-upload-pack", "port": 443, "comment": "global_package" }
+        { "methods": ["POST"], "url": "https://github.com/DietrichGebert/ponytail.git/git-upload-pack", "port": 443, "comment": "global_package" },
+        { "methods": ["GET"], "url": "https://sdmntprcentralus.oaiusercontent.com/files/*/raw", "port": 443, "comment": "global_package" }
       ],
       "deny": []
     }
