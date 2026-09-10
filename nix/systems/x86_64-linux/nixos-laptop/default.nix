@@ -172,6 +172,8 @@
     settings.General.Experimental = true;
   };
 
+  intel.enable = true;
+
   jgu-vpn = {
     enable = true;
 
